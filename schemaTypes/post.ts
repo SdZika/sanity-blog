@@ -6,12 +6,14 @@ export const post = defineType({
     type: 'document',
     fields: [defineField(
       {
-        name: 'title',
+        name: 'name',
         type: 'string',
+        
       }),
       defineField({
         name: 'slug',
         type: 'slug',
+        options: {source: 'name'}
       }),
       defineField({
         name: 'publishedAt',
@@ -25,7 +27,7 @@ export const post = defineType({
     ],
     preview: {
       select: {
-        title: 'title',
+        title: 'name',
       },
     },
   })
