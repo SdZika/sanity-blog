@@ -25,10 +25,6 @@ export const post = defineType({
         of: [{type: 'block',}],
       }),
     ],
-    preview: {
-      select: {
-        title: 'name',
-      },
-    },
+    
   })
   
