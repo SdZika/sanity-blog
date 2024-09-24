@@ -12,7 +12,7 @@ export const post = defineType({
     defineField({
       name: 'slug',
       type: 'slug',
-      options: {source: 'name'},
+      
     }),
     defineField({
       name: 'publishedAt',
