@@ -6,13 +6,13 @@ export const post = defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'name',
+      name: 'title',
       type: 'string',
     }),
     defineField({
       name: 'slug',
       type: 'slug',
-      
+      options: {source: 'name'},
     }),
     defineField({
       name: 'publishedAt',
