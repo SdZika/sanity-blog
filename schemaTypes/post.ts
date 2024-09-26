@@ -6,6 +6,14 @@ export const post = defineType({
   type: 'document',
   fields: [
     defineField({
+      name: 'postType',
+      type: 'string',
+      options: {
+        list: ['html', 'css', 'react', 'javascript', 'tailwind'],
+        layout: 'radio',
+      },
+    }),
+    defineField({
       name: 'title',
       type: 'string',
     }),
