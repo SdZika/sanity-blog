@@ -1,0 +1,5 @@
+{
+  "path": "../next-portfolio-page/**/*.{ts,tsx,js,jsx}",
+  "schema": "./schema.json",
+  "generates": "../next-portfolio-page/sanity/types.ts"
+}
